@@ -30,7 +30,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //TODO 模型路由绑定器全局设置
+        Route::pattern('id', '[0-9]+');
 
         parent::boot();
     }
